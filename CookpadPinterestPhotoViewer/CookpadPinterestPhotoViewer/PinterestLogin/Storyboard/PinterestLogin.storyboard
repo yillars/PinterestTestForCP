@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0he-3s-aDz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pinterest Login Controller-->
+        <scene sceneID="U9n-rI-ldM">
+            <objects>
+                <viewController id="ukD-Cc-caq" customClass="PinterestLoginController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MmW-OU-OYG"/>
+                        <viewControllerLayoutGuide type="bottom" id="aw3-Ah-wQF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="avb-Yw-h6h" customClass="PinterestLoginView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gbh-kT-moh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ke-R8-d1j">
+                                <rect key="frame" x="55" y="406" width="264" height="155"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_pinterest" translatesAutoresizingMaskIntoConstraints="NO" id="djP-m0-L92">
+                                        <rect key="frame" x="50" y="20" width="165" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="L5z-fi-vYY"/>
+                                            <constraint firstAttribute="height" constant="42" id="NQp-6E-NVg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNi-cs-fVg">
+                                        <rect key="frame" x="20" y="92" width="224" height="44"/>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.043137254899999998" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="zZx-e3-w15"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Please Authenticate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="action_authenticate_with_pinterest:" destination="ukD-Cc-caq" eventType="touchUpInside" id="joS-we-48V"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rw1-8e-6mq">
+                                        <rect key="frame" x="122" y="104" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="uhq-Fn-Beu"/>
+                                            <constraint firstAttribute="height" constant="20" id="xLZ-I4-nhY"/>
+                                        </constraints>
+                                        <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XNi-cs-fVg" firstAttribute="leading" secondItem="1ke-R8-d1j" secondAttribute="leading" constant="20" id="1vX-ls-Bh4"/>
+                                    <constraint firstAttribute="width" constant="264" id="4pM-1v-869"/>
+                                    <constraint firstAttribute="trailing" secondItem="XNi-cs-fVg" secondAttribute="trailing" constant="20" id="78F-QO-uzp"/>
+                                    <constraint firstAttribute="height" constant="155" id="SHJ-hc-tso"/>
+                                    <constraint firstItem="rw1-8e-6mq" firstAttribute="top" secondItem="XNi-cs-fVg" secondAttribute="bottom" constant="-32" id="YUv-HT-AyS"/>
+                                    <constraint firstItem="djP-m0-L92" firstAttribute="centerX" secondItem="1ke-R8-d1j" secondAttribute="centerX" id="l83-an-HbX"/>
+                                    <constraint firstItem="XNi-cs-fVg" firstAttribute="top" secondItem="djP-m0-L92" secondAttribute="bottom" constant="30" id="oUI-Wy-PhB"/>
+                                    <constraint firstItem="rw1-8e-6mq" firstAttribute="leading" secondItem="XNi-cs-fVg" secondAttribute="trailing" constant="-122" id="vsu-3G-O57"/>
+                                    <constraint firstItem="djP-m0-L92" firstAttribute="top" secondItem="1ke-R8-d1j" secondAttribute="top" constant="20" id="y1O-A3-0qC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gbh-kT-moh" secondAttribute="trailing" id="0n3-DF-XnJ"/>
+                            <constraint firstItem="aw3-Ah-wQF" firstAttribute="top" secondItem="gbh-kT-moh" secondAttribute="bottom" id="1C7-5T-e8A"/>
+                            <constraint firstItem="1ke-R8-d1j" firstAttribute="top" secondItem="MmW-OU-OYG" secondAttribute="bottom" constant="342" id="2hr-Xo-DEO"/>
+                            <constraint firstItem="gbh-kT-moh" firstAttribute="leading" secondItem="avb-Yw-h6h" secondAttribute="leading" id="43e-Cp-oYC"/>
+                            <constraint firstItem="gbh-kT-moh" firstAttribute="top" secondItem="avb-Yw-h6h" secondAttribute="top" id="Fir-Bg-JM3"/>
+                            <constraint firstItem="1ke-R8-d1j" firstAttribute="centerX" secondItem="avb-Yw-h6h" secondAttribute="centerX" id="Q3Y-oW-pCe"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="activityIndicator" destination="rw1-8e-6mq" id="1gE-3r-Bod"/>
+                            <outlet property="btnPinterestAuthenticate" destination="XNi-cs-fVg" id="4nC-gF-aRT"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dfb-yn-Xor"/>
+                    <connections>
+                        <outlet property="viewPinterestLogin" destination="avb-Yw-h6h" id="8Ru-tK-rkg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZw-ew-U8V" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="38"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7SX-cF-iKO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0he-3s-aDz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXI-wz-u27">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ukD-Cc-caq" kind="relationship" relationship="rootViewController" id="mA5-9b-4Ak"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mq-QJ-7aq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="logo_pinterest" width="165" height="42"/>
+    </resources>
+</document>

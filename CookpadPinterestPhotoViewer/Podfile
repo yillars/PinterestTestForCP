@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'CookpadPinterestPhotoViewer' do
+  pod 'PinterestSDK'
+  pod 'SDWebImage'
+  pod 'UIActivityIndicator-for-SDWebImage'
+
+end

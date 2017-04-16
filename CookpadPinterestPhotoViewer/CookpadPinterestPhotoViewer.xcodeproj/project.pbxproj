@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1CC624C1EA3F85D00DAF827 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC624B1EA3F85D00DAF827 /* main.m */; };
+		D1CC62A51EA3F8CA00DAF827 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62631EA3F8CA00DAF827 /* AppDelegate.m */; };
+		D1CC62A61EA3F8CA00DAF827 /* PhotoViewerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62671EA3F8CA00DAF827 /* PhotoViewerCell.m */; };
+		D1CC62A71EA3F8CA00DAF827 /* PhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC626A1EA3F8CA00DAF827 /* PhotoViewer.m */; };
+		D1CC62A81EA3F8CA00DAF827 /* PhotoViewer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CC626B1EA3F8CA00DAF827 /* PhotoViewer.xcassets */; };
+		D1CC62A91EA3F8CA00DAF827 /* PhotoViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CC626D1EA3F8CA00DAF827 /* PhotoViewer.storyboard */; };
+		D1CC62AA1EA3F8CA00DAF827 /* PinterestBoardsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62711EA3F8CA00DAF827 /* PinterestBoardsCell.m */; };
+		D1CC62AB1EA3F8CA00DAF827 /* PinterestBoardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62741EA3F8CA00DAF827 /* PinterestBoardsController.m */; };
+		D1CC62AC1EA3F8CA00DAF827 /* PinterestBoards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CC62761EA3F8CA00DAF827 /* PinterestBoards.xcassets */; };
+		D1CC62AD1EA3F8CA00DAF827 /* BoardImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62791EA3F8CA00DAF827 /* BoardImageObject.m */; };
+		D1CC62AE1EA3F8CA00DAF827 /* BoardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC627B1EA3F8CA00DAF827 /* BoardObject.m */; };
+		D1CC62AF1EA3F8CA00DAF827 /* PinterestBoardsController+Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC627D1EA3F8CA00DAF827 /* PinterestBoardsController+Server.m */; };
+		D1CC62B01EA3F8CA00DAF827 /* PinterestBoards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CC627F1EA3F8CA00DAF827 /* PinterestBoards.storyboard */; };
+		D1CC62B11EA3F8CA00DAF827 /* PinterestBoardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62821EA3F8CA00DAF827 /* PinterestBoardsView.m */; };
+		D1CC62B21EA3F8CA00DAF827 /* PinterestGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62861EA3F8CA00DAF827 /* PinterestGridCell.m */; };
+		D1CC62B31EA3F8CA00DAF827 /* PinterestGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62891EA3F8CA00DAF827 /* PinterestGridController.m */; };
+		D1CC62B41EA3F8CA00DAF827 /* PinObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC628C1EA3F8CA00DAF827 /* PinObject.m */; };
+		D1CC62B51EA3F8CA00DAF827 /* PinterestGridController+Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC628E1EA3F8CA00DAF827 /* PinterestGridController+Server.m */; };
+		D1CC62B61EA3F8CA00DAF827 /* PinterestGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CC62901EA3F8CA00DAF827 /* PinterestGrid.storyboard */; };
+		D1CC62B71EA3F8CA00DAF827 /* CustomCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62931EA3F8CA00DAF827 /* CustomCollectionLayout.m */; };
+		D1CC62B81EA3F8CA00DAF827 /* CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62951EA3F8CA00DAF827 /* CustomLayout.m */; };
+		D1CC62B91EA3F8CA00DAF827 /* PinterestGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62971EA3F8CA00DAF827 /* PinterestGridView.m */; };
+		D1CC62BA1EA3F8CA00DAF827 /* PinterestLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC629B1EA3F8CA00DAF827 /* PinterestLoginController.m */; };
+		D1CC62BB1EA3F8CA00DAF827 /* PinterestLogin.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CC629C1EA3F8CA00DAF827 /* PinterestLogin.xcassets */; };
+		D1CC62BC1EA3F8CA00DAF827 /* PinterestLoginController+Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC629F1EA3F8CA00DAF827 /* PinterestLoginController+Server.m */; };
+		D1CC62BD1EA3F8CA00DAF827 /* PinterestLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CC62A11EA3F8CA00DAF827 /* PinterestLogin.storyboard */; };
+		D1CC62BE1EA3F8CA00DAF827 /* PinterestLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC62A41EA3F8CA00DAF827 /* PinterestLoginView.m */; };
+		D1CC62C11EA3F8DD00DAF827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CC62BF1EA3F8DD00DAF827 /* LaunchScreen.storyboard */; };
+		D1CC62C31EA3F97C00DAF827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CC62C21EA3F97C00DAF827 /* Assets.xcassets */; };
+		F9EA75E1050CE0B1C820E866 /* libPods-CookpadPinterestPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CAB2D87CA976B95D58D9B1 /* libPods-CookpadPinterestPhotoViewer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8213AD88AF6772D76E0537E0 /* Pods-CookpadPinterestPhotoViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookpadPinterestPhotoViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookpadPinterestPhotoViewer/Pods-CookpadPinterestPhotoViewer.release.xcconfig"; sourceTree = "<group>"; };
+		8A2B344372438692C171B961 /* Pods-CookpadPinterestPhotoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookpadPinterestPhotoViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookpadPinterestPhotoViewer/Pods-CookpadPinterestPhotoViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		D1CC62471EA3F85D00DAF827 /* CookpadPinterestPhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookpadPinterestPhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1CC624B1EA3F85D00DAF827 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1CC625B1EA3F85D00DAF827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CC62621EA3F8CA00DAF827 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1CC62631EA3F8CA00DAF827 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1CC62661EA3F8CA00DAF827 /* PhotoViewerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewerCell.h; sourceTree = "<group>"; };
+		D1CC62671EA3F8CA00DAF827 /* PhotoViewerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewerCell.m; sourceTree = "<group>"; };
+		D1CC62691EA3F8CA00DAF827 /* PhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewer.h; sourceTree = "<group>"; };
+		D1CC626A1EA3F8CA00DAF827 /* PhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewer.m; sourceTree = "<group>"; };
+		D1CC626B1EA3F8CA00DAF827 /* PhotoViewer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PhotoViewer.xcassets; sourceTree = "<group>"; };
+		D1CC626D1EA3F8CA00DAF827 /* PhotoViewer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoViewer.storyboard; sourceTree = "<group>"; };
+		D1CC62701EA3F8CA00DAF827 /* PinterestBoardsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestBoardsCell.h; sourceTree = "<group>"; };
+		D1CC62711EA3F8CA00DAF827 /* PinterestBoardsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestBoardsCell.m; sourceTree = "<group>"; };
+		D1CC62731EA3F8CA00DAF827 /* PinterestBoardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestBoardsController.h; sourceTree = "<group>"; };
+		D1CC62741EA3F8CA00DAF827 /* PinterestBoardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestBoardsController.m; sourceTree = "<group>"; };
+		D1CC62761EA3F8CA00DAF827 /* PinterestBoards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PinterestBoards.xcassets; sourceTree = "<group>"; };
+		D1CC62781EA3F8CA00DAF827 /* BoardImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardImageObject.h; sourceTree = "<group>"; };
+		D1CC62791EA3F8CA00DAF827 /* BoardImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardImageObject.m; sourceTree = "<group>"; };
+		D1CC627A1EA3F8CA00DAF827 /* BoardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardObject.h; sourceTree = "<group>"; };
+		D1CC627B1EA3F8CA00DAF827 /* BoardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardObject.m; sourceTree = "<group>"; };
+		D1CC627C1EA3F8CA00DAF827 /* PinterestBoardsController+Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PinterestBoardsController+Server.h"; sourceTree = "<group>"; };
+		D1CC627D1EA3F8CA00DAF827 /* PinterestBoardsController+Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PinterestBoardsController+Server.m"; sourceTree = "<group>"; };
+		D1CC627F1EA3F8CA00DAF827 /* PinterestBoards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinterestBoards.storyboard; sourceTree = "<group>"; };
+		D1CC62811EA3F8CA00DAF827 /* PinterestBoardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestBoardsView.h; sourceTree = "<group>"; };
+		D1CC62821EA3F8CA00DAF827 /* PinterestBoardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestBoardsView.m; sourceTree = "<group>"; };
+		D1CC62851EA3F8CA00DAF827 /* PinterestGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestGridCell.h; sourceTree = "<group>"; };
+		D1CC62861EA3F8CA00DAF827 /* PinterestGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestGridCell.m; sourceTree = "<group>"; };
+		D1CC62881EA3F8CA00DAF827 /* PinterestGridController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestGridController.h; sourceTree = "<group>"; };
+		D1CC62891EA3F8CA00DAF827 /* PinterestGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestGridController.m; sourceTree = "<group>"; };
+		D1CC628B1EA3F8CA00DAF827 /* PinObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinObject.h; sourceTree = "<group>"; };
+		D1CC628C1EA3F8CA00DAF827 /* PinObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinObject.m; sourceTree = "<group>"; };
+		D1CC628D1EA3F8CA00DAF827 /* PinterestGridController+Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PinterestGridController+Server.h"; sourceTree = "<group>"; };
+		D1CC628E1EA3F8CA00DAF827 /* PinterestGridController+Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PinterestGridController+Server.m"; sourceTree = "<group>"; };
+		D1CC62901EA3F8CA00DAF827 /* PinterestGrid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinterestGrid.storyboard; sourceTree = "<group>"; };
+		D1CC62921EA3F8CA00DAF827 /* CustomCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionLayout.h; sourceTree = "<group>"; };
+		D1CC62931EA3F8CA00DAF827 /* CustomCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionLayout.m; sourceTree = "<group>"; };
+		D1CC62941EA3F8CA00DAF827 /* CustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayout.h; sourceTree = "<group>"; };
+		D1CC62951EA3F8CA00DAF827 /* CustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayout.m; sourceTree = "<group>"; };
+		D1CC62961EA3F8CA00DAF827 /* PinterestGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestGridView.h; sourceTree = "<group>"; };
+		D1CC62971EA3F8CA00DAF827 /* PinterestGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestGridView.m; sourceTree = "<group>"; };
+		D1CC629A1EA3F8CA00DAF827 /* PinterestLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestLoginController.h; sourceTree = "<group>"; };
+		D1CC629B1EA3F8CA00DAF827 /* PinterestLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestLoginController.m; sourceTree = "<group>"; };
+		D1CC629C1EA3F8CA00DAF827 /* PinterestLogin.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PinterestLogin.xcassets; sourceTree = "<group>"; };
+		D1CC629E1EA3F8CA00DAF827 /* PinterestLoginController+Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PinterestLoginController+Server.h"; sourceTree = "<group>"; };
+		D1CC629F1EA3F8CA00DAF827 /* PinterestLoginController+Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PinterestLoginController+Server.m"; sourceTree = "<group>"; };
+		D1CC62A11EA3F8CA00DAF827 /* PinterestLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinterestLogin.storyboard; sourceTree = "<group>"; };
+		D1CC62A31EA3F8CA00DAF827 /* PinterestLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestLoginView.h; sourceTree = "<group>"; };
+		D1CC62A41EA3F8CA00DAF827 /* PinterestLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestLoginView.m; sourceTree = "<group>"; };
+		D1CC62C01EA3F8DD00DAF827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1CC62C21EA3F97C00DAF827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9CAB2D87CA976B95D58D9B1 /* libPods-CookpadPinterestPhotoViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CookpadPinterestPhotoViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1CC62441EA3F85D00DAF827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9EA75E1050CE0B1C820E866 /* libPods-CookpadPinterestPhotoViewer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		533271BECF91B1EC9091C94D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B344372438692C171B961 /* Pods-CookpadPinterestPhotoViewer.debug.xcconfig */,
+				8213AD88AF6772D76E0537E0 /* Pods-CookpadPinterestPhotoViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1CC623E1EA3F85D00DAF827 = {
+			isa = PBXGroup;
+			children = (
+				D1CC62491EA3F85D00DAF827 /* CookpadPinterestPhotoViewer */,
+				D1CC62481EA3F85D00DAF827 /* Products */,
+				533271BECF91B1EC9091C94D /* Pods */,
+				D549C18300D767F4D903BBBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1CC62481EA3F85D00DAF827 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62471EA3F85D00DAF827 /* CookpadPinterestPhotoViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1CC62491EA3F85D00DAF827 /* CookpadPinterestPhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62C21EA3F97C00DAF827 /* Assets.xcassets */,
+				D1CC62611EA3F8CA00DAF827 /* AppDelegate */,
+				D1CC62641EA3F8CA00DAF827 /* PhotoViewer */,
+				D1CC626E1EA3F8CA00DAF827 /* PinterestBoards */,
+				D1CC62831EA3F8CA00DAF827 /* PinterestGrid */,
+				D1CC62981EA3F8CA00DAF827 /* PinterestLogin */,
+				D1CC625B1EA3F85D00DAF827 /* Info.plist */,
+				D1CC62BF1EA3F8DD00DAF827 /* LaunchScreen.storyboard */,
+				D1CC624A1EA3F85D00DAF827 /* Supporting Files */,
+			);
+			path = CookpadPinterestPhotoViewer;
+			sourceTree = "<group>";
+		};
+		D1CC624A1EA3F85D00DAF827 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC624B1EA3F85D00DAF827 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1CC62611EA3F8CA00DAF827 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62621EA3F8CA00DAF827 /* AppDelegate.h */,
+				D1CC62631EA3F8CA00DAF827 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D1CC62641EA3F8CA00DAF827 /* PhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62651EA3F8CA00DAF827 /* Cell */,
+				D1CC62681EA3F8CA00DAF827 /* Controller */,
+				D1CC626B1EA3F8CA00DAF827 /* PhotoViewer.xcassets */,
+				D1CC626C1EA3F8CA00DAF827 /* Storyboard */,
+			);
+			path = PhotoViewer;
+			sourceTree = "<group>";
+		};
+		D1CC62651EA3F8CA00DAF827 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62661EA3F8CA00DAF827 /* PhotoViewerCell.h */,
+				D1CC62671EA3F8CA00DAF827 /* PhotoViewerCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D1CC62681EA3F8CA00DAF827 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62691EA3F8CA00DAF827 /* PhotoViewer.h */,
+				D1CC626A1EA3F8CA00DAF827 /* PhotoViewer.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1CC626C1EA3F8CA00DAF827 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC626D1EA3F8CA00DAF827 /* PhotoViewer.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D1CC626E1EA3F8CA00DAF827 /* PinterestBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC626F1EA3F8CA00DAF827 /* Cell */,
+				D1CC62721EA3F8CA00DAF827 /* Controller */,
+				D1CC62751EA3F8CA00DAF827 /* Objects */,
+				D1CC62761EA3F8CA00DAF827 /* PinterestBoards.xcassets */,
+				D1CC62771EA3F8CA00DAF827 /* Server */,
+				D1CC627E1EA3F8CA00DAF827 /* Storyboard */,
+				D1CC62801EA3F8CA00DAF827 /* View */,
+			);
+			path = PinterestBoards;
+			sourceTree = "<group>";
+		};
+		D1CC626F1EA3F8CA00DAF827 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62701EA3F8CA00DAF827 /* PinterestBoardsCell.h */,
+				D1CC62711EA3F8CA00DAF827 /* PinterestBoardsCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D1CC62721EA3F8CA00DAF827 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62731EA3F8CA00DAF827 /* PinterestBoardsController.h */,
+				D1CC62741EA3F8CA00DAF827 /* PinterestBoardsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1CC62751EA3F8CA00DAF827 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		D1CC62771EA3F8CA00DAF827 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62781EA3F8CA00DAF827 /* BoardImageObject.h */,
+				D1CC62791EA3F8CA00DAF827 /* BoardImageObject.m */,
+				D1CC627A1EA3F8CA00DAF827 /* BoardObject.h */,
+				D1CC627B1EA3F8CA00DAF827 /* BoardObject.m */,
+				D1CC627C1EA3F8CA00DAF827 /* PinterestBoardsController+Server.h */,
+				D1CC627D1EA3F8CA00DAF827 /* PinterestBoardsController+Server.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		D1CC627E1EA3F8CA00DAF827 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC627F1EA3F8CA00DAF827 /* PinterestBoards.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D1CC62801EA3F8CA00DAF827 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62811EA3F8CA00DAF827 /* PinterestBoardsView.h */,
+				D1CC62821EA3F8CA00DAF827 /* PinterestBoardsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1CC62831EA3F8CA00DAF827 /* PinterestGrid */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62841EA3F8CA00DAF827 /* Cells */,
+				D1CC62871EA3F8CA00DAF827 /* Controller */,
+				D1CC628A1EA3F8CA00DAF827 /* Server */,
+				D1CC628F1EA3F8CA00DAF827 /* Storyboard */,
+				D1CC62911EA3F8CA00DAF827 /* View */,
+			);
+			path = PinterestGrid;
+			sourceTree = "<group>";
+		};
+		D1CC62841EA3F8CA00DAF827 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62851EA3F8CA00DAF827 /* PinterestGridCell.h */,
+				D1CC62861EA3F8CA00DAF827 /* PinterestGridCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D1CC62871EA3F8CA00DAF827 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62881EA3F8CA00DAF827 /* PinterestGridController.h */,
+				D1CC62891EA3F8CA00DAF827 /* PinterestGridController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1CC628A1EA3F8CA00DAF827 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC628B1EA3F8CA00DAF827 /* PinObject.h */,
+				D1CC628C1EA3F8CA00DAF827 /* PinObject.m */,
+				D1CC628D1EA3F8CA00DAF827 /* PinterestGridController+Server.h */,
+				D1CC628E1EA3F8CA00DAF827 /* PinterestGridController+Server.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		D1CC628F1EA3F8CA00DAF827 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62901EA3F8CA00DAF827 /* PinterestGrid.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D1CC62911EA3F8CA00DAF827 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62921EA3F8CA00DAF827 /* CustomCollectionLayout.h */,
+				D1CC62931EA3F8CA00DAF827 /* CustomCollectionLayout.m */,
+				D1CC62941EA3F8CA00DAF827 /* CustomLayout.h */,
+				D1CC62951EA3F8CA00DAF827 /* CustomLayout.m */,
+				D1CC62961EA3F8CA00DAF827 /* PinterestGridView.h */,
+				D1CC62971EA3F8CA00DAF827 /* PinterestGridView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1CC62981EA3F8CA00DAF827 /* PinterestLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62991EA3F8CA00DAF827 /* Controller */,
+				D1CC629C1EA3F8CA00DAF827 /* PinterestLogin.xcassets */,
+				D1CC629D1EA3F8CA00DAF827 /* Server */,
+				D1CC62A01EA3F8CA00DAF827 /* Storyboard */,
+				D1CC62A21EA3F8CA00DAF827 /* View */,
+			);
+			path = PinterestLogin;
+			sourceTree = "<group>";
+		};
+		D1CC62991EA3F8CA00DAF827 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC629A1EA3F8CA00DAF827 /* PinterestLoginController.h */,
+				D1CC629B1EA3F8CA00DAF827 /* PinterestLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1CC629D1EA3F8CA00DAF827 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC629E1EA3F8CA00DAF827 /* PinterestLoginController+Server.h */,
+				D1CC629F1EA3F8CA00DAF827 /* PinterestLoginController+Server.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		D1CC62A01EA3F8CA00DAF827 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62A11EA3F8CA00DAF827 /* PinterestLogin.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D1CC62A21EA3F8CA00DAF827 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC62A31EA3F8CA00DAF827 /* PinterestLoginView.h */,
+				D1CC62A41EA3F8CA00DAF827 /* PinterestLoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D549C18300D767F4D903BBBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9CAB2D87CA976B95D58D9B1 /* libPods-CookpadPinterestPhotoViewer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1CC62461EA3F85D00DAF827 /* CookpadPinterestPhotoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1CC625E1EA3F85D00DAF827 /* Build configuration list for PBXNativeTarget "CookpadPinterestPhotoViewer" */;
+			buildPhases = (
+				DB48613804C9CA67EF183768 /* [CP] Check Pods Manifest.lock */,
+				D1CC62431EA3F85D00DAF827 /* Sources */,
+				D1CC62441EA3F85D00DAF827 /* Frameworks */,
+				D1CC62451EA3F85D00DAF827 /* Resources */,
+				3A065D865E2001B5DBD5D08B /* [CP] Embed Pods Frameworks */,
+				5AD31DAEE75B882DCF1501F0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookpadPinterestPhotoViewer;
+			productName = CookpadPinterestPhotoViewer;
+			productReference = D1CC62471EA3F85D00DAF827 /* CookpadPinterestPhotoViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1CC623F1EA3F85D00DAF827 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Cookpad Inc.";
+				TargetAttributes = {
+					D1CC62461EA3F85D00DAF827 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D1CC62421EA3F85D00DAF827 /* Build configuration list for PBXProject "CookpadPinterestPhotoViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1CC623E1EA3F85D00DAF827;
+			productRefGroup = D1CC62481EA3F85D00DAF827 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1CC62461EA3F85D00DAF827 /* CookpadPinterestPhotoViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1CC62451EA3F85D00DAF827 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CC62BD1EA3F8CA00DAF827 /* PinterestLogin.storyboard in Resources */,
+				D1CC62C11EA3F8DD00DAF827 /* LaunchScreen.storyboard in Resources */,
+				D1CC62A81EA3F8CA00DAF827 /* PhotoViewer.xcassets in Resources */,
+				D1CC62A91EA3F8CA00DAF827 /* PhotoViewer.storyboard in Resources */,
+				D1CC62B01EA3F8CA00DAF827 /* PinterestBoards.storyboard in Resources */,
+				D1CC62B61EA3F8CA00DAF827 /* PinterestGrid.storyboard in Resources */,
+				D1CC62BB1EA3F8CA00DAF827 /* PinterestLogin.xcassets in Resources */,
+				D1CC62C31EA3F97C00DAF827 /* Assets.xcassets in Resources */,
+				D1CC62AC1EA3F8CA00DAF827 /* PinterestBoards.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A065D865E2001B5DBD5D08B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookpadPinterestPhotoViewer/Pods-CookpadPinterestPhotoViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AD31DAEE75B882DCF1501F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookpadPinterestPhotoViewer/Pods-CookpadPinterestPhotoViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB48613804C9CA67EF183768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1CC62431EA3F85D00DAF827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CC62B51EA3F8CA00DAF827 /* PinterestGridController+Server.m in Sources */,
+				D1CC62B41EA3F8CA00DAF827 /* PinObject.m in Sources */,
+				D1CC62BC1EA3F8CA00DAF827 /* PinterestLoginController+Server.m in Sources */,
+				D1CC62B81EA3F8CA00DAF827 /* CustomLayout.m in Sources */,
+				D1CC62B31EA3F8CA00DAF827 /* PinterestGridController.m in Sources */,
+				D1CC62BE1EA3F8CA00DAF827 /* PinterestLoginView.m in Sources */,
+				D1CC62AF1EA3F8CA00DAF827 /* PinterestBoardsController+Server.m in Sources */,
+				D1CC62B71EA3F8CA00DAF827 /* CustomCollectionLayout.m in Sources */,
+				D1CC62A71EA3F8CA00DAF827 /* PhotoViewer.m in Sources */,
+				D1CC62B91EA3F8CA00DAF827 /* PinterestGridView.m in Sources */,
+				D1CC62A51EA3F8CA00DAF827 /* AppDelegate.m in Sources */,
+				D1CC62AA1EA3F8CA00DAF827 /* PinterestBoardsCell.m in Sources */,
+				D1CC62B21EA3F8CA00DAF827 /* PinterestGridCell.m in Sources */,
+				D1CC624C1EA3F85D00DAF827 /* main.m in Sources */,
+				D1CC62A61EA3F8CA00DAF827 /* PhotoViewerCell.m in Sources */,
+				D1CC62AB1EA3F8CA00DAF827 /* PinterestBoardsController.m in Sources */,
+				D1CC62BA1EA3F8CA00DAF827 /* PinterestLoginController.m in Sources */,
+				D1CC62AD1EA3F8CA00DAF827 /* BoardImageObject.m in Sources */,
+				D1CC62B11EA3F8CA00DAF827 /* PinterestBoardsView.m in Sources */,
+				D1CC62AE1EA3F8CA00DAF827 /* BoardObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1CC62BF1EA3F8DD00DAF827 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1CC62C01EA3F8DD00DAF827 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1CC625C1EA3F85D00DAF827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D1CC625D1EA3F85D00DAF827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1CC625F1EA3F85D00DAF827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2B344372438692C171B961 /* Pods-CookpadPinterestPhotoViewer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookpadPinterestPhotoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.CookpadPinterestPhotoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1CC62601EA3F85D00DAF827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8213AD88AF6772D76E0537E0 /* Pods-CookpadPinterestPhotoViewer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookpadPinterestPhotoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookpad.CookpadPinterestPhotoViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1CC62421EA3F85D00DAF827 /* Build configuration list for PBXProject "CookpadPinterestPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1CC625C1EA3F85D00DAF827 /* Debug */,
+				D1CC625D1EA3F85D00DAF827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1CC625E1EA3F85D00DAF827 /* Build configuration list for PBXNativeTarget "CookpadPinterestPhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1CC625F1EA3F85D00DAF827 /* Debug */,
+				D1CC62601EA3F85D00DAF827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1CC623F1EA3F85D00DAF827 /* Project object */;
+}

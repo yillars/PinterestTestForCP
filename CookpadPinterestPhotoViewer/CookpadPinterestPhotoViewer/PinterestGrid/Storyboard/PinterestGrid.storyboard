@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XL2-DP-gLE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Board Name-->
+        <scene sceneID="EMS-PP-7LY">
+            <objects>
+                <viewController storyboardIdentifier="PinterestGridController" id="am9-nT-TkR" customClass="PinterestGridController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Em-cP-9jL"/>
+                        <viewControllerLayoutGuide type="bottom" id="VLA-Wy-eGk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fnx-jA-Gjt" customClass="PinterestGridView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="m66-IB-BXe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="mWD-2v-PoD" customClass="CustomCollectionLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PinterestGridCell" id="K7v-BW-j7Q" customClass="PinterestGridCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="260"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="260"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAQ-J0-9TD">
+                                                    <rect key="frame" x="10" y="10" width="160" height="160"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAT-Pj-XxU">
+                                                    <rect key="frame" x="10" y="181" width="160" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="8Pz-QQ-ksy"/>
+                                                    </constraints>
+                                                    <string key="text">Label
+label
+label</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="MAQ-J0-9TD" secondAttribute="trailing" constant="10" id="08G-R1-Jof"/>
+                                            <constraint firstItem="MAQ-J0-9TD" firstAttribute="top" secondItem="K7v-BW-j7Q" secondAttribute="top" constant="10" id="6gb-Pp-FXa"/>
+                                            <constraint firstItem="MAQ-J0-9TD" firstAttribute="leading" secondItem="K7v-BW-j7Q" secondAttribute="leading" constant="10" id="FWr-cM-w21"/>
+                                            <constraint firstItem="EAT-Pj-XxU" firstAttribute="leading" secondItem="K7v-BW-j7Q" secondAttribute="leading" constant="10" id="Tec-rb-ElZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="MAQ-J0-9TD" secondAttribute="bottom" constant="90" id="cM3-t8-dxy"/>
+                                            <constraint firstAttribute="trailing" secondItem="EAT-Pj-XxU" secondAttribute="trailing" constant="10" id="tBO-vV-Rce"/>
+                                            <constraint firstItem="EAT-Pj-XxU" firstAttribute="top" secondItem="MAQ-J0-9TD" secondAttribute="bottom" constant="11" id="ybU-fh-zeN"/>
+                                        </constraints>
+                                        <size key="customSize" width="180" height="260"/>
+                                        <connections>
+                                            <outlet property="imgPin" destination="MAQ-J0-9TD" id="9YK-Li-v5O"/>
+                                            <outlet property="lblDescription" destination="EAT-Pj-XxU" id="RSX-80-s53"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fnx-jA-Gjt" id="OMH-08-aLc"/>
+                                    <outlet property="delegate" destination="fnx-jA-Gjt" id="1ne-Xb-ujI"/>
+                                </connections>
+                            </collectionView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-Dk-UNy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="TvF-vL-4tt" kind="embed" id="qcc-6a-xo4"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m66-IB-BXe" firstAttribute="top" secondItem="fnx-jA-Gjt" secondAttribute="top" id="KkJ-Mw-OpK"/>
+                            <constraint firstItem="m66-IB-BXe" firstAttribute="leading" secondItem="fnx-jA-Gjt" secondAttribute="leading" id="Odc-Nk-PrG"/>
+                            <constraint firstItem="DgH-Dk-UNy" firstAttribute="leading" secondItem="fnx-jA-Gjt" secondAttribute="leading" id="Srz-4J-U1G"/>
+                            <constraint firstAttribute="trailing" secondItem="m66-IB-BXe" secondAttribute="trailing" id="hve-zU-LUc"/>
+                            <constraint firstAttribute="trailing" secondItem="DgH-Dk-UNy" secondAttribute="trailing" id="nqG-0r-Zb9"/>
+                            <constraint firstItem="DgH-Dk-UNy" firstAttribute="top" secondItem="fnx-jA-Gjt" secondAttribute="top" id="pmn-0J-7mc"/>
+                            <constraint firstItem="VLA-Wy-eGk" firstAttribute="top" secondItem="DgH-Dk-UNy" secondAttribute="bottom" id="stg-3v-JCV"/>
+                            <constraint firstItem="VLA-Wy-eGk" firstAttribute="top" secondItem="m66-IB-BXe" secondAttribute="bottom" id="t5k-ln-mfl"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="colList" destination="m66-IB-BXe" id="npt-jU-lTM"/>
+                            <outlet property="viewEmptyPage" destination="DgH-Dk-UNy" id="8c8-Ry-ONY"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Board Name" id="YHv-h6-baD">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="iDT-Fz-fii">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zyx-DQ-yVB">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.80784313730000001" green="0.043137254899999998" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_close_board:" destination="am9-nT-TkR" eventType="touchUpInside" id="Ktd-rn-rIy"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="viewPinterestGrid" destination="fnx-jA-Gjt" id="PWy-wA-hjb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EG6-EF-CmJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.79999999999995" y="-46.326836581709152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0KA-ua-uwe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XL2-DP-gLE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5cS-ka-8DG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="am9-nT-TkR" kind="relationship" relationship="rootViewController" id="0Ch-bo-EOH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ea-jb-wXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-46.326836581709152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hWf-St-J3O">
+            <objects>
+                <viewController id="TvF-vL-4tt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Kn-YR-yv2"/>
+                        <viewControllerLayoutGuide type="bottom" id="lR1-Sj-z2f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1fu-Zy-ARg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-Mt-can">
+                                <rect key="frame" x="31" y="105" width="314" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="fRN-pY-ify"/>
+                                </constraints>
+                                <string key="text">There is no pin.
+
+Please add a pins to this board on Pinterest and press the refresh button.
+
+</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O56-Zn-1ps">
+                                <rect key="frame" x="31" y="235" width="314" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zI4-FE-4gS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" red="0.80784313730000001" green="0.043137254899999998" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_retry_load:" destination="yy1-lW-Tag" eventType="touchUpInside" id="4SZ-Xc-rtW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p3V-Mt-can" firstAttribute="leading" secondItem="1fu-Zy-ARg" secondAttribute="leading" constant="31" id="8q7-4W-2nB"/>
+                            <constraint firstItem="O56-Zn-1ps" firstAttribute="leading" secondItem="1fu-Zy-ARg" secondAttribute="leading" constant="31" id="AHG-Ly-Y8n"/>
+                            <constraint firstAttribute="trailing" secondItem="O56-Zn-1ps" secondAttribute="trailing" constant="30" id="E3R-Sh-e5l"/>
+                            <constraint firstItem="O56-Zn-1ps" firstAttribute="top" secondItem="p3V-Mt-can" secondAttribute="bottom" constant="8" id="buz-29-Z5p"/>
+                            <constraint firstAttribute="trailing" secondItem="p3V-Mt-can" secondAttribute="trailing" constant="30" id="kZU-Hn-9fd"/>
+                            <constraint firstItem="p3V-Mt-can" firstAttribute="top" secondItem="1fu-Zy-ARg" secondAttribute="top" constant="105" id="wAJ-ey-N0X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yy1-lW-Tag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="-46"/>
+        </scene>
+    </scenes>
+</document>
